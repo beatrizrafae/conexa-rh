@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Conexa RH</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagem/conexarh.jpeg" alt="Logo da Conexa RH"> <!-- Substitua 'logo.png' pelo caminho correto da sua imagem -->
+        </div>
+        <h1> Conexa RH</h1>
+        <br>
+        <p>Conectamos talentos às melhores oportunidades!</p>
+    </header>
+    
+
+    <section class="team">
+        <div class="team-member" onclick="mostrarFuncao('funcao1', this)">
+            <img src="imagem/patriciaferreira.jpeg" alt="Foto Patricia">
+            <br>
+            <span class="funcao">Patricia Ferreira</span>
+            <p>Assistente de DP</p>
+            <div class="descricao" id="funcao1">Assistente de Departamento Pessoal</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao2', this)">
+            <img src="imagem/guilhermepereira.jpeg" alt="Guilherme">
+            <br>
+            <span class="funcao">Guilherme Pereira</span>
+            <p>Recrutamento e Seleção</p>
+            <div class="descricao" id="funcao2">Responsável pelas Fontes de Recrutamento e Seleção</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao3', this)">
+            <img src="imagem/Evelin jacinto.jpeg" alt="Evelin">
+            <span class="funcao">Evellyn Jacinto</span>
+            <p>Recrutamento e Seleção</p>
+            <div class="descricao" id="funcao3">Especialista em Recrutamento e Seleção(Jovem Aprendiz)</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao4', this)">
+            <img src="imagem/joao.jpeg" alt="João">
+            <br>
+            <span class="funcao">João Raphael</span>
+            <p>Gerente </p>
+            <div class="descricao" id="funcao4">Gerente de Treinamento e Desenvolvimento</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao5', this)">
+            <img src="imagem/latifamartins.jpeg" alt="Latifa">
+            <br>
+            <span class="funcao">Latifa Martins</span>
+            <p>Analista</p>
+            <div class="descricao" id="funcao5">Analista de Performance e Avaliação</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao6', this)">
+            <img src="imagem/Janielle Ferreira.jpeg" alt="Foto do Funcionário 6">
+            <span class="funcao">Janielle Ferreira</span>
+            <p>Coordenadora</p>
+            <div class="descricao" id="funcao6">Coordenadora de Cultura e Valores</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao7', this)">
+            <img src="imagem/ana souza.jpeg" alt="Ana">
+            <br>
+            <span class="funcao">Ana Souza</span>
+            <p>RH</p>
+            <div class="descricao" id="funcao7">Assistente de Recursos Humanos</div>
+        </div>
+        <br>
+        <div class="team-member" onclick="mostrarFuncao('funcao8', this)">
+            <img src="imagem/rafaelabeatriz.jpeg" alt="Rafaela">
+            <br>
+            <span class="funcao">Rafaela Souza</span>
+            <p>TI</p>
+            <div class="descricao" id="funcao8">Desenvolvedora web, criação de sites e aplicações</div>
+        </div>
+    </section>
+    <a href="index.html" class="btn-voltar">⬅ Voltar</a>
+
+
+    <footer>
+        <p>&copy; 2025 Conexa RH. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarFuncao(id, elemento) {
+            // Esconde todas as descrições
+            const descricoes = document.querySelectorAll('.descricao');
+            descricoes.forEach(descricao => {
+                descricao.style.display = 'none';
+            });
+
+            // Mostra a descrição do funcionário clicado
+            const descricaoSelecionada = document.getElementById(id);
+            descricaoSelecionada.style.display = 'block';
+
+            // Opcional: Mudar o texto da bolinha para mostrar a função
+            elemento.querySelector('.descricao').innerHTML = descricaoSelecionada.innerHTML;
+        }
+    </script>
+</body>
+</html>

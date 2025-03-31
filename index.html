@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexa RH - Trabalhe Conosco</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="imagem/conexarh.jpeg" alt="Logo Conexa RH" class="logo">
+        <h1>Conexa RH</h1>
+    </header>
+    <section class="intro">
+        <h2>Junte-se ao nosso time!</h2>
+        <p>Conectamos talentos a grandes oportunidades. 🚀 Venha fazer parte do nosso time e construa o seu futuro com a Conexa RH!</p>
+    </section>
+    <section class="vagas">
+        <div class="vaga" onclick="abrirVaga('vaga1.html')">
+            <i class="fas fa-users"></i>
+            <h2>Jovem Aprendiz</h2>
+            <p>Suporte Administrativo</p>
+        </div>
+        <div class="vaga" onclick="abrirVaga('vaga2.html')">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h2>Jovem Aprendiz</h2>
+            <p>Recrutamento e Seleção</p>
+        </div>
+        <div class="vaga" onclick="abrirVaga('vaga3.html')">
+            <i class="fas fa-user-tie"></i>
+            <h2>Assistente Administrativo</h2>
+            <p>Área de RH</p>
+        </div>
+        <div class="vaga" onclick="abrirVaga('vaga4.html')">
+            <i class="fas fa-user-tie"></i>
+            <h2>Auxiliar Administrativo</h2>
+            <p>Departamento Pessoal</p>
+        </div>
+    </section>
+    <section class="equipe">
+        <h2>Nossa Equipe</h2>
+        <p>Conheça os profissionais que fazem a Conexa RH acontecer.</p>
+        <a href="funcionario.html" class="btn-equipe">⬅ Nossa Equipe</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Conexa RH. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function abrirVaga(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

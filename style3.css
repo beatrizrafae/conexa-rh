@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+/* Estilizando a logo */
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botão de voltar */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #0000FF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #0000FF;
+}
+
+/* Seção da equipe */
+.team {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Cada membro da equipe */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+/* Foto do funcionário */
+.team-member img {
+    width: 100px; /* Ajustei para ficar menor */
+    height: 100px;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nome do funcionário */
+.team-member p {
+    margin-top: 10px;
+    font-size: 12px;;
+    font-weight: center;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo da descrição ao clicar */
+.descricao {
+    position: absolute;
+    bottom: -25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
